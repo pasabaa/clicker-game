@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <script src="js/particles.js" defer></script>
+    <title>Clicker for pasabaa</title>
+</head>
+<body>
+    <main class="container">
+        <div class="content">
+            <div class="content__header">
+                <h2>Player</h2>
+                <h1 class="d-center"><i class="bi bi-hand-index-thumb-fill fs-sm"></i> <span class="fw-bold"
+                        id="money">0</span></h1>
+            </div>
+            <div class="content__body">
+                <div class="spawn">
+                    <div id="enemy">
+                        <img draggable="false" id="enemy__avatar" class="img-fluid" src="img/pepps/peep-1.png" alt="">
+                    </div>
+                    <div class="progress">
+
+                        <progress class="progress__bar" id="health__enemy" value="100" max="100"></progress>
+                        <p class="fw-bold score-text"><span id="score-text">100</span>/<span
+                                id="current-score-text">100</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__footer">
+                <div class="item">
+                    <button title="More Health" id="health" class="btn btn--primary disabled"><i
+                            class="bi bi-heart-fill"></i> </button>
+                    <p>x<span id="health-text">0</span></p>
+                </div>
+                <div class="item">
+                    <button title="More Damage" id="damage" class="btn btn--primary disabled"><i
+                            class="bi bi-battery-charging"></i></button>
+                    <p>x<span id="damage-text">0</span></p>
+                </div>
+                <div class="item">
+                    <button title="Autoclick" id="auto" class="btn btn--primary disabled"><i
+                            class="bi bi-robot"></i></button>
+                    <p><span id="auto-text">0</span>s</p>
+                </div>
+                <div class="item">
+                    <button title="Random Item" id="random" class="btn btn--secondary disabled"><i
+                            class="bi bi-shuffle"></i></button>
+                    <p>x<span id="random-text">0</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

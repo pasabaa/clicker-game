@@ -1,0 +1,150 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    background-color: #efefef;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms ease-in-out;
+}
+
+.content {
+    background: #f4f4f4;
+    position: relative;
+    max-width: 24rem;
+    padding: 2rem;
+    color: black;
+    border-radius: 8px;
+    transition: all 200ms ease-in-out;
+}
+
+.content__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .2rem;
+}
+
+.content__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spawn {
+    padding: 1rem;
+    margin: 1.6rem 0 1.6rem 0;
+    cursor: pointer;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.content__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    padding: .4rem;
+    border: 0;
+    border-radius: .2rem;
+    font-weight: bold;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn--primary {
+    background-color: #080808;
+    color: whitesmoke;
+}
+
+.btn--secondary {
+    background: whitesmoke;
+    color: #080808;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.progress {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+    background-color: transparent;
+    gap: .5rem;
+}
+
+.progress__bar {
+    height: .6rem;
+    width: 100%;
+}
+
+progress {
+    accent-color: rgb(222, 58, 58);
+    transition: all 400ms ease-in-out;
+}
+
+particle {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.fw-bold{
+    font-weight: bolder;
+}
+
+.fs-sm{
+    font-size: 1.2rem;
+}
+
+.score-text{
+    font-size: .8rem;
+    font-weight: 900;
+    color: #080808;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
